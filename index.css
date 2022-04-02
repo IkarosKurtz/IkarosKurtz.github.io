@@ -3,120 +3,81 @@ html{
 }
 
 body{
-    background-color: #4e4e4e;
-    color: #fff;
+    margin: 0;
+    background-color: rgb(9, 33, 51);
+    font-family: 'Exo 2',sans-serif;
 }
 
-.Container{
-    display: grid ;
-    grid-template-columns: 24% 50%;
-    font-family: 'Exo 2', sans-serif;;
+header{
+    background-color: rgb(255, 77, 42);
 }
 
-.MainContainer-Left{
-    height: 50%;
+header nav{
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav a{
+    font-weight: 600;
+    padding: 2.5px;
+    transition-duration: .6s;
+}
+
+.Barra{
+    
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-size: 2rem;
+    transition-duration: .6s;
+}
+
+.logo img{
+    width: 50px;
+    padding-right: 5px;
+    padding-left: 7px;
+}
+
+footer{
     width: 100%;
-    border: 2px solid white;
-    background-color: rgb(253, 175, 118);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    transition-duration: .5s;
-    position: relative;
+    justify-content: center;
+    background-color: #2D3A4C;
+}
 
+.Footer h1{
     font-size: 3rem;
-    font-weight: bold;
-    transition-duration: .6s;
 }
 
-.MainContainer-Left:hover{
-    background-color: rgb(161, 87, 33);
-    transform: scale(1.1);
-    transition-duration: .5s;
-    z-index: 1;
+.Footer p{
+    font-size: 2rem;
+    text-align: center;
 }
 
-.Name{
-    font-size: 5rem;
-    opacity: 1;
-    transition-duration: .6s;
-}
-
-.MainContainer-Left:hover .Name{
-    opacity: 0;
-}
-
-.MainContainer-Left:hover .Myname{
-    font-size: 3.5rem;
-    transition-duration: .6s;
-}
-
-.MainContainer-Left:hover .Name2{
-    opacity: 1;
-    font-size: 5rem;
-    filter: blur(0px);
-    transition: all 1000ms ease;
-}
-
-.Name2{
-    font-size: 5rem;
-    bottom: 44%;
-    position: absolute;
-    opacity: 0;
-    filter: blur(10px);
-    transition-duration: .6s;
-
-}
-
-.LogoContainer-Right{
-    border: 2px solid #ffffff;
-    height: 150%;
-    background-color: rgb(52, 61, 131);
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition-duration: .5s;
-    margin-left: 1rem;
-}
-
-.LogoContainer-Right:hover{
-    background-color: rgb(128, 137, 206);
-    transform: scale(1.1);
-    transition-duration: .5s;
-    z-index: 1;
-}
-
-.LogoContainer-Right:hover .Icons{
-    font-size: 6rem;
-    transition-duration: .6s;
-}
-
-.Icons{
-    font-family: 'Exo 2', sans-serif;
-    font-size: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    font-weight: bold;
-    transition-duration: .6s;
-}
-
-.Logo{
-    width: 30%;
-    justify-content: center;
-    animation: rotate 5s linear infinite;
-    transition-duration: .6s;
-}
-
-@keyframes rotate{
-    from{
-        transform: rotate(0deg);
+@media (min-width: 600px){
+    
+    nav a:hover{
+        font-size: 2rem;
+        color: #fff;
+        transition-duration: .6s;
     }
-    to{
-        transform: rotate(360deg);
+
+    .logo:hover{
+        transform: scale(1.1);
+        transition-duration: .6s;
     }
 }
