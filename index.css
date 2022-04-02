@@ -1,0 +1,122 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #4e4e4e;
+    color: #fff;
+}
+
+.Container{
+    display: grid ;
+    grid-template-columns: 24% 50%;
+    font-family: 'Exo 2', sans-serif;;
+}
+
+.MainContainer-Left{
+    height: 50%;
+    width: 100%;
+    border: 2px solid white;
+    background-color: rgb(253, 175, 118);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .5s;
+    position: relative;
+
+    font-size: 3rem;
+    font-weight: bold;
+    transition-duration: .6s;
+}
+
+.MainContainer-Left:hover{
+    background-color: rgb(161, 87, 33);
+    transform: scale(1.1);
+    transition-duration: .5s;
+    z-index: 1;
+}
+
+.Name{
+    font-size: 3rem;
+    opacity: 1;
+    transition-duration: .6s;
+}
+
+.MainContainer-Left:hover .Name{
+    opacity: 0;
+}
+
+.MainContainer-Left:hover .Myname{
+    font-size: 4rem;
+    transition-duration: .6s;
+}
+
+.MainContainer-Left:hover .Name2{
+    opacity: 1;
+    font-size: 3rem;
+    filter: blur(0px);
+    transition: all 1000ms ease;
+}
+
+.Name2{
+    font-size: 3rem;
+    bottom: 51%;
+    position: absolute;
+    opacity: 0;
+    filter: blur(10px);
+    transition-duration: .6s;
+
+}
+
+.LogoContainer-Right{
+    border: 2px solid #ffffff;
+    height: 150%;
+    background-color: rgb(52, 61, 131);
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .5s;
+    margin-left: 10px;
+}
+
+.LogoContainer-Right:hover{
+    background-color: rgb(128, 137, 206);
+    transform: scale(1.1);
+    transition-duration: .5s;
+    z-index: 1;
+}
+
+.LogoContainer-Right:hover .Icons{
+    font-size: 7rem;
+    transition-duration: .6s;
+}
+
+.Icons{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    transition-duration: .6s;
+}
+
+.Logo{
+    width: 30%;
+    justify-content: center;
+    animation: rotate 5s linear infinite;
+    transition-duration: .6s;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
