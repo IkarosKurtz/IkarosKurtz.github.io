@@ -1,5 +1,5 @@
 html{
-    font-size: 16px;
+    font-size: 10px;
 }
 
 body{
@@ -38,7 +38,7 @@ body{
 }
 
 .Name{
-    font-size: 3rem;
+    font-size: 5rem;
     opacity: 1;
     transition-duration: .6s;
 }
@@ -48,20 +48,20 @@ body{
 }
 
 .MainContainer-Left:hover .Myname{
-    font-size: 4rem;
+    font-size: 3.5rem;
     transition-duration: .6s;
 }
 
 .MainContainer-Left:hover .Name2{
     opacity: 1;
-    font-size: 3rem;
+    font-size: 5rem;
     filter: blur(0px);
     transition: all 1000ms ease;
 }
 
 .Name2{
-    font-size: 3rem;
-    bottom: 51%;
+    font-size: 5rem;
+    bottom: 44%;
     position: absolute;
     opacity: 0;
     filter: blur(10px);
@@ -79,7 +79,7 @@ body{
     justify-content: center;
     align-items: center;
     transition-duration: .5s;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .LogoContainer-Right:hover{
@@ -90,7 +90,7 @@ body{
 }
 
 .LogoContainer-Right:hover .Icons{
-    font-size: 7rem;
+    font-size: 6rem;
     transition-duration: .6s;
 }
 

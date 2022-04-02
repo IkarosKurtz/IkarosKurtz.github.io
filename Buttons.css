@@ -1,7 +1,7 @@
 .ButtonsContainer{
     border: 2px solid white;
     background-color: darkcyan;
-    height: 6rem;
+    height: 8rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,18 +12,18 @@
 
 .Actions button{
     font-family:  'Exo 2', sans-serif;
-    width: 5rem;
-    height: 2rem;
+    width: 8rem;
+    height: 3rem;
     margin-top: 1%;
 }
 
 .ButtonsText{
-    font-size: 2rem;
+    font-size: 3rem;
     transition-duration: .6s;
 }
 
 .ButtonsContainer:hover .ButtonsText{
-    font-size: 2.5rem;
+    font-size: 4rem;
     transition-duration: .6s;
     z-index: 1;
 }
