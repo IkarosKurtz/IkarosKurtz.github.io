@@ -10,15 +10,10 @@
     margin: 5%;
     height: 15rem;
     background-color: #334756;
-}
-
-.Description-Container {
     width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     font-size: 1.5rem;
+    flex: 2;
+    transition-duration: .6s;
 }
 
 .Description-Container p{
@@ -33,6 +28,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .Image img{
@@ -180,6 +176,21 @@
 
 @media (min-width: 600px){
 
+    .Main-Container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 2%;
+    }
+
+    /*
+            DESCRIPTION
+     */
+
+    .Description-Container:hover{
+        transform: scale(1.1);
+        transition-duration: .6s;
+    }
+
     .Description-Container{
         height: 20rem;
     }
@@ -191,5 +202,88 @@
 
     .Description-Container img{
         height: 10rem;
+    }
+    .Image img{
+        height: 13rem;
+    }
+
+    .Description-Container:hover h1{
+        font-size: 4rem;
+        transition-duration: .6s;
+    }
+
+    .What-is-this h1{
+        font-size: 3rem;
+        transition-duration: .6s;
+    }
+
+    .What-is-this p{
+        font-size: 2rem;
+    }
+
+    /*
+            ABOUT ME
+    */
+
+    .About-me-Container{
+        transition-duration: .6s;
+    }
+
+    .About-me-Container:hover{
+        transform: scale(1.1);
+        transition-duration: .6s;
+    }
+
+    /*
+            SOCIAL
+     */
+
+    .Social{
+        transition-duration: .6s;
+        margin-top: 5%;
+    }
+
+    .Social:hover{
+        transform: scale(1.1);
+        transition-duration: .6s;
+    }
+
+    .Social-Title{
+        transition-duration: .6s;
+    }
+
+    .Social:hover .Social-Title{
+        font-size: 5rem;
+        transition-duration: .6s;
+    }
+
+    .Icons{
+        transition-duration: .6s;
+    }
+
+    #Github{
+        transition-duration: .6s;
+    }
+
+    #Github:hover {
+        color: black;
+        transition-delay: .15s;
+        transition-duration: .6s;
+    }
+    
+    #linkedin{
+        transition-duration: .6s;
+    }
+
+    #Linkedin:hover {
+        color: black;
+        transition-delay: .15s;
+        transition-duration: .6s;
+    }
+
+    #Twitter:hover {
+        color: black;
+        transition-delay: .15s;
+        transition-duration: .6s;
     }
 }
