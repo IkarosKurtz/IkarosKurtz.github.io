@@ -1,14 +1,18 @@
-.Description {
+
+/*
+    Descripcion
+*/
+.Description-Container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 5%;
     height: 15rem;
-    margin: 2rem ;
     background-color: #334756;
 }
 
-.Description div{
+.Description-Container {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -17,15 +21,103 @@
     font-size: 1.5rem;
 }
 
-.Description p{
+.Description-Container p{
     padding: 15px;
     font-size: normal;
+    text-align: justify;
 }
 
-.Description img{
-    height: 10rem;
+.Image{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Image img{
+    
+    height: 8rem;
     animation: rotate 5s linear infinite;
 }
+
+.Description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Description h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.What-is-this{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.What-is-this p{
+    margin: 0;
+}
+
+/* 
+CONTENEDOR DE SOCIALES
+ */
+
+.Social{
+    background-color: #54b4fd;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.Social-Title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end ;
+    align-items: center;
+    margin: 0;
+    color: white;
+}
+
+.Icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2.5%;
+    color: white;
+}
+
+.IconsName{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.Icons i{
+    width: 20%;
+}
+
+.IconsName p{
+    width: 20%;
+}
+
+
 
 @keyframes rotate{
     from{
@@ -37,12 +129,17 @@
 }
 
 @media (min-width: 600px){
-    .Description div{
-        
+
+    .Description-Container{
+        height: 20rem;
     }
 
-    .Description p{
+    .Description-Container p{
         font-size: 2.5rem;
         display: flex;
+    }
+
+    .Description-Container img{
+        height: 10rem;
     }
 }
