@@ -1,6 +1,6 @@
 
 /*
-    Descripcion
+        Descripcion
 */
 .Description-Container {
     display: flex;
@@ -65,7 +65,7 @@
 }
 
 /* 
-CONTENEDOR DE SOCIALES
+        CONTENEDOR DE SOCIALES
  */
 
 .Social{
@@ -117,7 +117,56 @@ CONTENEDOR DE SOCIALES
     width: 20%;
 }
 
+/*
+        ABOUT ME
+*/
 
+.About-me-Container{
+    margin: 5%;
+    margin-top: 0;
+    height: 100%;
+    background-color: #501717;
+    color: gainsboro;
+    font-size: 1.6rem;
+}
+
+.About-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-me-Text{
+    width: 90%;
+}
+
+.About-me-Text p{
+    text-align: justify;
+}
+
+.About-me-Text h1{
+    margin: 0;
+    padding-top: .5em;
+    font-size: 2.5rem;
+}
+
+.About-me-Image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-me-Image img{
+    width: 15rem;
+    padding: 1.5em;
+    padding-top: 0;
+}
+
+.About-me-Image small{
+    text-align: center;
+}
 
 @keyframes rotate{
     from{
