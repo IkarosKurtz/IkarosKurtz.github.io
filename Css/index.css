@@ -15,6 +15,12 @@ header{
     background-color: rgb(255, 77, 42);
 }
 
+.Container-All{
+    width: 100%;
+    max-width: 1500px;
+}
+
+
 .Barra nav{
     display: flex;
     flex-direction: column;

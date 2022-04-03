@@ -32,8 +32,7 @@
 }
 
 .Image img{
-    
-    height: 8rem;
+    height: 10rem;
     animation: rotate 5s linear infinite;
 }
 
@@ -54,6 +53,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60%;
 }
 
 .What-is-this p{
@@ -203,6 +203,7 @@
     .Description-Container img{
         height: 10rem;
     }
+
     .Image img{
         height: 13rem;
     }
@@ -240,6 +241,7 @@
 
     .Social{
         transition-duration: .6s;
+        height: 55%;
         margin-top: 5%;
     }
 
@@ -267,7 +269,6 @@
 
     #Github:hover {
         color: black;
-        transition-delay: .15s;
         transition-duration: .6s;
     }
     
@@ -277,13 +278,29 @@
 
     #Linkedin:hover {
         color: black;
-        transition-delay: .15s;
         transition-duration: .6s;
     }
 
     #Twitter:hover {
         color: black;
-        transition-delay: .15s;
         transition-duration: .6s;
+    }
+
+    @media (max-width: 870px) {
+        .What-is-this p{
+            font-size: 1.5rem;
+        }
+
+        .Image img{
+            height: 12rem;
+        }
+
+        .Description-Container:hover h1{
+            font-size: 2.5rem;
+        }
+
+        .What-is-this h1{
+            font-size: 2rem;
+        }
     }
 }
