@@ -109,8 +109,9 @@
     color: white;
 }
 
-.Icons i{
+.Icons a{
     width: 20%;
+    color: white;
 }
 
 .IconsName p{
