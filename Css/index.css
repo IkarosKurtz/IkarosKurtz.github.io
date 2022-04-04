@@ -1,5 +1,6 @@
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -28,7 +29,7 @@ header{
     padding: 15px;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: #000;
 }
@@ -73,11 +74,35 @@ footer{
 
 .Footer h1{
     font-size: 3rem;
+    margin-bottom: 0;
 }
 
 .Footer p{
     font-size: 2rem;
+    margin-top: 0;
     text-align: center;
+}
+
+.Social-2{
+    background-color: #5F6977;
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 3rem;
+}
+
+.Social-2 div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.Social-2 a{
+    color: white;
+    text-decoration: none;
 }
 
 @media (min-width: 600px){
