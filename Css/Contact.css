@@ -1,0 +1,11 @@
+.Contact-Container{
+    background-color: #a06ecf;
+    margin: 5%;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
