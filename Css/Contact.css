@@ -9,3 +9,56 @@
     justify-content: center;
     align-items: center;
 }
+
+.Contact h1{
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.Input-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    margin-bottom: 1.5em;
+}
+
+.Input-Container input{
+    width: 40%;
+    margin-top: 1em;
+    border-bottom: 1px solid #2D3A4C;
+    font-size: 1.6rem;
+    padding-left: .5em;
+    border: none;
+    margin: 0;
+}
+
+.Message-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding: 1em;
+}
+
+.Message-Container button{
+    background-color: #2D3A4C;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    height: 8rem;
+    margin-left: 1em;
+    width: 75%;
+}
+
+.Message-Container textarea{
+    width: 100%;
+    height: 15em;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
